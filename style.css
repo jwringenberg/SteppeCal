@@ -27,6 +27,13 @@ input:hover{
   background-color: #F1F1F1;
  }
 
+.sad{
+    width: 200px;
+}
+
+hr{
+   border: 6px dashed  black;
+}
 
 .amounts{
      height: 100px;

@@ -1,0 +1,35 @@
+@font-face{
+  font-family: wed;
+  src: url("Inspiration/Inspiration-Regular.ttf");
+}
+
+h1{
+    font-family: wed;
+    font-size: 72;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 55;
+}
+
+input{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    font-size: 32px;
+    font-family: monospace;
+    padding: 15px;
+ }
+
+input:hover{
+  background-color: #F1F1F1;
+ }
+
+
+.amounts{
+     height: 100px;
+     width: 100px;
+     margin: 25px;
+}

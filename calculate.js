@@ -9,7 +9,7 @@ function initialize()
 
 function setUp()
 {
-  document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br><input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'><input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'><input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'><br><br><hr><input type = 'button' class = 'amounts' value = 'Get Saved' onclick = 'getVal()'>";
+  document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br><input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'><input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'><input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";
   sessionStorage.setItem('value', val);
 }
 
@@ -31,4 +31,5 @@ function calFive()
 function getVal()
 {
   val = sessionStorage.getItem('value');
+  setUp();
 }

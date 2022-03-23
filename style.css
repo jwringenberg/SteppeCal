@@ -31,6 +31,10 @@ input:hover{
     width: 150px;
 }
 
+.bill{
+   width: 350px;
+}
+
 hr{
    border: 6px dashed black;
 }

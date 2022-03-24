@@ -12,10 +12,11 @@ function initialize()
 
 function setUp()
 {
+  var addition = "L\'Addition";
   var button1 = "<input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'>";
   var button2 = "<input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'>";
   var button3 = "<input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";
-  var button4 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = 'L\'Addition' onclick = 'printBill()'>";
+  var button4 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = addition onclick = 'printBill()'>";
   document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br>" + button1 + button2 + button3 + button4;
   window.localStorage.setItem('value', val);
   window.localStorage.setItem('s', soda);
@@ -52,8 +53,8 @@ function getVal()
 
 function printBill()
 {
-   let part1 = "Sodas: " + soda + "<br>"; 
-   let part2 = "Beers: " + beer + "<br>"; 
-   let part3 = "Wine/Mix/Selzer: " + mix + "<br>"; 
-   document.getElementById('main').innerHTML = "<h3>L\'Addition</h3><br>" + part1 + part2 + part3;
+   let part1 = "<h3>Sodas: " + soda + "</h3>"; 
+   let part2 = "<h3>Beers: " + beer + "</h3>"; 
+   let part3 = "<h3>Wine/Mix/Selzer: " + mix + "</h3>"; 
+   document.getElementById('main').innerHTML = "<h1>L\'Addition</h1><br>" + part1 + part2 + part3;
 }

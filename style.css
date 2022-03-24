@@ -36,7 +36,8 @@ input:hover{
 }
 
 hr{
-   border: 6px dashed black;
+   border: 6px solid black;
+    width: 75%;
 }
 
 .amounts{

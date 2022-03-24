@@ -62,7 +62,7 @@ function printBill()
    let part1 = "<p id = 'addition'>Sodas: " + soda + "<br>"; 
    let part2 = "Beers: " + beer + "<br>"; 
    let part3 = "Wine/Mix/Selzer: " + mix + "<br>"; 
-   let part4 = "<br><hr><br><h3>Total: $" +   total + "</p>"; 
+   let part4 = "<hr><h3>Total: $" +   total + "</p>"; 
 
-   document.getElementById('main').innerHTML = "<h3>L\'Addition</h3><br>" + part1 + part2 + part3 + part4;
+   document.getElementById('main').innerHTML = "<h3>L\'Addition</h3>" + part1 + part2 + part3 + part4;
 }

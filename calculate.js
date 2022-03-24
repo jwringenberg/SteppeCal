@@ -13,7 +13,7 @@ function initialize()
 
 function setUp()
 {
-  var addition = "L\'Addition";
+  var addition = "L \u0027 Addition";
   var button1 = "<input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'>";
   var button2 = "<input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'>";
   var button3 = "<input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";
@@ -59,10 +59,10 @@ function getVal()
 
 function printBill()
 {
-   let part1 = "<h3>Sodas: " + soda + "</h3>"; 
-   let part2 = "<h3>Beers: " + beer + "</h3>"; 
-   let part3 = "<h3>Wine/Mix/Selzer: " + mix + "</h3>"; 
-   let part4 = "<br><hr><br><h3>Total: $" +   total + "</h3>"; 
+   let part1 = "<p id = 'addition'>Sodas: " + soda + "<br>"; 
+   let part2 = "Beers: " + beer + "<br>"; 
+   let part3 = "Wine/Mix/Selzer: " + mix + "<br>"; 
+   let part4 = "<br><hr><br><h3>Total: $" +   total + "</p>"; 
 
-   document.getElementById('main').innerHTML = "<h1>L\'Addition</h1><br>" + part1 + part2 + part3 + part4;
+   document.getElementById('main').innerHTML = "<h3>L\'Addition</h3><br>" + part1 + part2 + part3 + part4;
 }

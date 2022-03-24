@@ -18,7 +18,7 @@ function initialize()
 
 function setUp()
 {
-  var addition = "L &apos; Addition";
+  var addition = "L&aposAddition";
   var button1 = "<input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'>";
   var button2 = "<input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'>";
   var button3 = "<input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";

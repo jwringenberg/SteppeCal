@@ -8,6 +8,7 @@ function initialize()
 {
   val = document.getElementById('value').value;
   val = parseInt(val);
+  let orgVal = val;
   window.localStorage.setItem('v', 0);
   window.localStorage.setItem('s', 0);
   window.localStorage.setItem('b', 0);
@@ -63,10 +64,26 @@ function getVal()
 
 function printBill()
 {
+   
    let part1 = "<p id = 'addition'>Sodas: " + soda + "<br>"; 
    let part2 = "Beers: " + beer + "<br>"; 
    let part3 = "Wine/Mix/Selzer: " + mix + "</p><hr>"; 
-   let part4 = "<p id = 'addition'>Total: $" +   total + "</p>"; 
-   let part5 = "<br><br><input type = 'button' class = 'bill' value = 'Retourner' onclick = 'setUp()'>";
-   document.getElementById('main').innerHTML = "<h3>L\'Addition</h3>" + part1 + part2 + part3 + part4;
+   let part4 = ""; 
+   let part5 =  "<br><br><input type = 'button' class = 'bill' value = 'Retourner' onclick = 'setUp()'>"; 
+   
+   if(val < 0)
+    {
+       let x = Math.abs(val); 
+       part4 = "<p id = 'addition'>: You Owe $" +  x + "</p>"; 
+    }
+   else if (val == 0)
+    {
+       part4 = "<p id = 'addition'>: You Owe $ NOTHING </p>"; 
+     }
+    else
+    {
+      part4 = "<p id = 'addition'>: We Owe You $" + val + "</p>"; 
+    }
+  
+    document.getElementById('main').innerHTML = "<h3>L\'Addition</h3>" + part1 + part2 + part3 + part4 + part5;
 }

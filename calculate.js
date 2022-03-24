@@ -7,7 +7,12 @@ let total = 0;
 function initialize()
 {
   val = document.getElementById('value').value;
-  val = parseInt(val)
+  val = parseInt(val);
+  localStorage.removeItem('v');
+  localStorage.removeItem('s');
+  localStorage.removeItem('b');
+  localStorage.removeItem('m');
+  localStorage.removeItem('t');
   setUp();
 }
 

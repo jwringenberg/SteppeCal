@@ -21,7 +21,7 @@ function setUp()
   var button1 = "<input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'>";
   var button2 = "<input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'>";
   var button3 = "<input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";
-  var button4 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = 'L \' Addition' onclick = 'printBill()'>";
+  var button4 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = 'L #39' Addition' onclick = 'printBill()'>";
   document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br>" + button1 + button2 + button3 + button4;
   window.localStorage.setItem('v', val);
   window.localStorage.setItem('s', soda);

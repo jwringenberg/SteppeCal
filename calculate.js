@@ -8,11 +8,11 @@ function initialize()
 {
   val = document.getElementById('value').value;
   val = parseInt(val);
-  localStorage.removeItem('v');
-  localStorage.removeItem('s');
-  localStorage.removeItem('b');
-  localStorage.removeItem('m');
-  localStorage.removeItem('t');
+ window.localStorage.setItem('v', 0);
+  window.localStorage.setItem('s', 0);
+  window.localStorage.setItem('b', 0);
+  window.localStorage.setItem('m', 0);
+  window.localStorage.setItem('t', 0);
   setUp();
 }
 

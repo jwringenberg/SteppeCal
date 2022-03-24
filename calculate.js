@@ -24,11 +24,11 @@ function setUp()
   var button3 = "<input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive()'>";
   var button4 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = addition onclick = 'printBill()'>";
   document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br>" + button1 + button2 + button3 + button4;
-  window.localStorage.setItem('v', parseInt(val));
-  window.localStorage.setItem('s', parseInt(soda));
-  window.localStorage.setItem('b', parseInt(beer));
-  window.localStorage.setItem('m', parseInt(mix));
-  window.localStorage.setItem('t', parseInt(total));
+  window.localStorage.setItem('v', val);
+  window.localStorage.setItem('s', soda);
+  window.localStorage.setItem('b', beer);
+  window.localStorage.setItem('m', mix);
+  window.localStorage.setItem('t', total);
 }
 
 function calTwo()
@@ -54,11 +54,11 @@ function calFive()
 }
 function getVal()
 {
-   val = window.localStorage.getItem('v');
-   soda = window.localStorage.getItem('s');
-   beer = window.localStorage.getItem('b');
-   mix = window.localStorage.getItem('m');
-   total = window.localStorage.getItem('t');
+   val = parseInt(window.localStorage.getItem('v'));
+   soda = parseInt(window.localStorage.getItem('s'));
+   beer = parseInt(window.localStorage.getItem('b'));
+   mix = parseInt(window.localStorage.getItem('m'));
+   total = parseInt(window.localStorage.getItem('t'));
    setUp();
 }
 

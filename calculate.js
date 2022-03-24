@@ -8,7 +8,7 @@ function initialize()
 {
   val = document.getElementById('value').value;
   val = parseInt(val);
- window.localStorage.setItem('v', 0);
+  window.localStorage.setItem('v', 0);
   window.localStorage.setItem('s', 0);
   window.localStorage.setItem('b', 0);
   window.localStorage.setItem('m', 0);

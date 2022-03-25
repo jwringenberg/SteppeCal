@@ -23,13 +23,13 @@ function initialize()
 
 function setUp()
 {
-  var button1 = "Soda: <input class = 'amounts' type = 'button' value = '$2' onclick = 'calTwo()'>";
-  var button2 = "Beer: <input type = 'button' class = 'amounts' value = '$4' onclick = 'calFour()'>";
-  var button3 = "Wine: <input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive(" + 1 + ")'>";
-  var button4 = "Mix: <input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive(" + 2 + ")'>";
-  var button5 = "Seltzer: <input type = 'button' class = 'amounts' value = '$5' onclick = 'calFive(" + 3 + ")'>";
+  var button1 = "<input class = 'amounts' type = 'button' value = 'Soda: $2' onclick = 'calTwo()'>";
+  var button2 = "<input type = 'button' class = 'amounts' value = 'Beer: $4' onclick = 'calFour()'>";
+  var button3 = "<input type = 'button' class = 'amounts' value = 'Mix: $5' onclick = 'calFive(" + 1 + ")'>";
+  var button4 = "<input type = 'button' class = 'amounts' value = 'Wine: $5' onclick = 'calFive(" + 2 + ")'>";
+  var button5 = "<input type = 'button' class = 'amounts' value = 'Sel: $5' onclick = 'calFive(" + 3 + ")'>";
   var button6 = "<br><br><br><hr><br><br><input type = 'button' class = 'bill' value = 'L&#39Addition' onclick = 'printBill()'>";
-  document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br><p id = 'addition'>" + button1 + button2 +"<br>"+ button3 + button4 + button5 + button6;
+  document.getElementById('main').innerHTML = "<h3>$" + val + "</h3><br>" + button1 + button2 +"<br>"+ button3 + button4 + button5 + button6;
   window.localStorage.setItem('v', val);
   window.localStorage.setItem('so', soda);
   window.localStorage.setItem('b', beer);

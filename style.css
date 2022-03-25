@@ -20,7 +20,7 @@ h3{
 
 input{
     background-color: white;
-    width: 250; 
+    width: 200; 
     color: black;
     border: 2px solid #555555;
     border-radius: 8px;
@@ -52,7 +52,7 @@ hr{
 
 .amounts{
      height: 100px;
-     width: 100px;
+     width: 300px;
      margin: 25px;
 }
 

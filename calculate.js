@@ -88,11 +88,11 @@ function getVal()
 function printBill()
 {
    
-   let part1 = "<p id = 'addition'>Sodas: " + soda + "<br>"; 
-   let part2 = "Beers: " + beer + "<br>"; 
-   let part3 = "Mix: " + mix + "<br>"; 
-   let part4 = "Wine: " + wine + "<br>"; 
-   let part5 = "Seltzer: " + sel + "</p><hr>"; 
+   let part1 = "<p id = 'addition'>Sodas: $2 × " + soda + "= " + (soda*2) + "<br>"; 
+   let part2 = "Beers: $4 × " + beer + " = " + (beer*4) + "<br>"; 
+   let part3 = "Mix: $5 × " + mix + " = " + (mix*5) + "<br>"; 
+   let part4 = "Wine: $5 × " + wine + " = " + (wine*5) + "<br>"; 
+   let part5 = "Seltzer: $5 × " + sel + " = " + (sel*5) + "</p><hr>"; 
    let part6 = "<p id = 'addition'>Total: $" +  total; 
    let part7 = ""; 
    let part8 =  "<br><br><input type = 'button' class = 'bill' value = 'Retourner' onclick = 'setUp()'>"; 

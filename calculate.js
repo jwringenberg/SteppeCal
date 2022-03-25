@@ -23,7 +23,7 @@ function initialize()
 
 function setUp()
 {
-  var button1 = "<input class = 'amounts' type = 'button' value = 'Soda: $2' onclick = 'calTwo()'>";
+  var button1 = "<input type = 'button' class = 'amounts' value = 'Soda: $2' onclick = 'calTwo()'>";
   var button2 = "<input type = 'button' class = 'amounts' value = 'Beer: $4' onclick = 'calFour()'>";
   var button3 = "<input type = 'button' class = 'amounts' value = 'Mix: $5' onclick = 'calFive(" + 1 + ")'>";
   var button4 = "<input type = 'button' class = 'amounts' value = 'Wine: $5' onclick = 'calFive(" + 2 + ")'>";

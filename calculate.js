@@ -90,11 +90,11 @@ function printBill()
    let sp = "&nbsp&nbsp";
    let sp1 = "&nbsp&nbsp&nbsp&nbsp";
    let sp2 = "&nbsp&nbsp&nbsp";
-   let part1 = "<p id = 'addition'>" + sp +  + "Sodas: $2 × " + soda +"<br>"; 
-   let part2 = sp + "Beers: $4 × " + beer + "<br>"; 
-   let part3 = sp1 + "Mix: $5 × " + mix + "<br>"; 
-   let part4 = sp2 + "Wine: $5 × " + wine + "<br>"; 
-   let part5 = "Seltzer: $5 × " + sel + "</p><hr>"; 
+   let part1 = "<p id = 'addition'>" + sp + "Sodas: $2 × " + soda + " = " + (soda*2) + "<br>"; 
+   let part2 = sp + "Beers: $4 × " + beer + " = " + (beer*4) + "<br>"; 
+   let part3 = sp1 + "Mix: $5 × " + mix + " = " + (mix*5) + "<br>"; 
+   let part4 = sp2 + "Wine: $5 × " + wine + " = " + (wine*5) + "<br>"; 
+   let part5 = "Seltzer: $5 × " + sel + " = " + (sel*5) + "</p><hr>"; 
    let part6 = "<p id = 'addition'>Total: $" +  total; 
    let part7 = ""; 
    let part8 =  "<br><br><input type = 'button' class = 'bill' value = 'Retourner' onclick = 'setUp()'>"; 

@@ -75,7 +75,7 @@ function printBill()
    if(val < 0)
     {
        let x = Math.abs(val); 
-       part5 = "<br><span id = 'owe'>You Owe $" +  x + "</span></p>"; 
+       part5 = "<br><span id = 'owe1'>You Owe $" +  x + "</span></p>"; 
     }
    else if (val == 0)
     {
@@ -83,7 +83,7 @@ function printBill()
      }
     else
     {
-      part5 = "<br><span id = 'owe'>We Owe You $" + val + "</span></p>"; 
+      part5 = "<br><span id = 'owe2'>We Owe You $" + val + "</span></p>"; 
     }
   
     document.getElementById('main').innerHTML = "<h3>L\'Addition</h3>" + part1 + part2 + part3 + part4 + part5 + part6;

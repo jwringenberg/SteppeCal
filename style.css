@@ -41,6 +41,10 @@ input:hover{
    width: 350px;
 }
 
+#value{
+   width: 550px;
+}
+
 hr{
    border: 6px solid black;
     width: 75%;
